@@ -1,0 +1,33 @@
+{
+  "name": "employee",
+  "version": "1.0.0",
+  "description": "Employee CRUD",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node index.js"
+  },
+  "author": "Kadek Chrisna",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/controllers/*.js",
+      "src/repositories/*.js",
+      "src/usecase/*.js",
+      "src/domain/*.js",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/coverage/**"
+    ],
+    "testURL": "http://localhost/"
+  }
+}

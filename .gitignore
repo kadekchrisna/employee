@@ -1,0 +1,4 @@
+node_modules/
+package-lock.
+coverage/
+.DS_Store
