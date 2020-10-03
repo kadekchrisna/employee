@@ -21,3 +21,10 @@ test("should return 500 error", () => {
   const result = errorHandler().errorHandler(null, req, res);
   expect(result.status).toBeCalledWith(500);
 });
+
+test("should return 404 error", () => {
+  let req = mockRequest();
+  let res = mockResponse();
+  const result = errorHandler().notFound(req, res);
+  expect(result.status).toBeCalledWith(404);
+});

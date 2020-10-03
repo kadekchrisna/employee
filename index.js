@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -13,5 +15,6 @@ app.use(bodyParser.json());
 app.use(ErrorlController().errorHandler);
 
 app.use("/api", Routes);
+app.use(ErrorlController().notFound);
 
 app.listen(port);
