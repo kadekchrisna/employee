@@ -9,7 +9,7 @@ Employee API for technical test
 Things you need to have and installed
 
 ```
-MySQL v5.7
+MySQL   v5.7
 Node.js v12.4.0 or latest
 NPM	v6.9.0 or latest
 ```
