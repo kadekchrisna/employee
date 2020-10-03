@@ -7,7 +7,32 @@ module.exports = class extends EmployeeRepository {
     super();
     this.db = db;
   }
-  async getAll() {
+  async getAllEmployees() {
     return this.db.employees.findAll();
+  }
+  async getEmployeeById(idEmployee) {
+    return this.db.employees.findOne({
+      where: {
+        id: idEmployee,
+      },
+    });
+  }
+  async createEmployee(employee) {
+    return this.db.employees.create(employee);
+  }
+  async updateEmployeeById(employee) {
+    return this.db.employees.update(employee, {
+      where: {
+        id: employee.id,
+      },
+      returning: true,
+    });
+  }
+  async deleteEmployeeById(idEmployee) {
+    return this.db.employees.destroy({
+      where: {
+        id: idEmployee,
+      },
+    });
   }
 };

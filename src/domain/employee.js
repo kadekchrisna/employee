@@ -1,16 +1,34 @@
 class employeeRepository {
-  getAll() {
+  getAllEmployees() {
     throw new Error("ERR_METHOD_NOT_IMPLEMENTED");
   }
-  get(idEmployee) {
+  getEmployeeById(idEmployee) {
+    throw new Error("ERR_METHOD_NOT_IMPLEMENTED");
+  }
+  createEmployee(employee) {
+    throw new Error("ERR_METHOD_NOT_IMPLEMENTED");
+  }
+  updateEmployeeById(employee) {
+    throw new Error("ERR_METHOD_NOT_IMPLEMENTED");
+  }
+  deleteEmployeeById(idEmployee) {
     throw new Error("ERR_METHOD_NOT_IMPLEMENTED");
   }
 }
 class employeeUseCase {
-  getAll() {
+  getAllEmployees() {
     throw new Error("ERR_METHOD_NOT_IMPLEMENTED");
   }
-  get(idEmployee) {
+  getEmployeeById(idEmployee) {
+    throw new Error("ERR_METHOD_NOT_IMPLEMENTED");
+  }
+  createEmployee(employee) {
+    throw new Error("ERR_METHOD_NOT_IMPLEMENTED");
+  }
+  updateEmployeeById(employee) {
+    throw new Error("ERR_METHOD_NOT_IMPLEMENTED");
+  }
+  deleteEmployeeById(idEmployee) {
     throw new Error("ERR_METHOD_NOT_IMPLEMENTED");
   }
 }
