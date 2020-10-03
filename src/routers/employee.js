@@ -8,11 +8,11 @@ const EmployeeController = require("../controllers/employee");
 const EmployeeUseCase = new ucRepo(new eRepo(db));
 
 r.get("/employees", EmployeeController(EmployeeUseCase).getEmployees);
-r.get("/employee/:id", EmployeeController(EmployeeUseCase).getEmployeeById);
+r.get("/employees/:id", EmployeeController(EmployeeUseCase).getEmployeeById);
 r.post("/employees", EmployeeController(EmployeeUseCase).createEmployee);
-r.put("/employee/:id", EmployeeController(EmployeeUseCase).updateEmployeeById);
+r.put("/employees/:id", EmployeeController(EmployeeUseCase).updateEmployeeById);
 r.delete(
-  "/employee/:id",
+  "/employees/:id",
   EmployeeController(EmployeeUseCase).deleteEmployeeById
 );
 
