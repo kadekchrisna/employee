@@ -1,6 +1,6 @@
-# Employee API
+# Backend Boilerplate API
 
-Employee API for technical test
+Boilerplate implement seperation of concern
 
 ## Getting Started
 
